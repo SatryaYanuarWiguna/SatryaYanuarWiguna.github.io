@@ -1,19 +1,287 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>praktikum SIDJA | Satrya Yanuar Wiguna</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil SY Series</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BACKGROUND */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #292929;
+            min-height: 100vh;
+
+            background-color: #e9edef;
+
+            background-image:
+                linear-gradient(
+                    55deg,
+                    transparent 49.5%,
+                    #ffffff 49.8%,
+                    #ffffff 50.2%,
+                    transparent 50.5%
+                ),
+                linear-gradient(
+                    125deg,
+                    transparent 49.5%,
+                    #d8dde0 49.8%,
+                    #d8dde0 50.2%,
+                    transparent 50.5%
+                );
+
+            background-size: 230px 230px;
+            background-position: center;
+        }
+
+        /* HEADER DAN LOGO */
+        header {
+            text-align: center;
+            padding: 35px 15px 0;
+        }
+
+        .logo {
+            width: 200px;
+            max-width: 65%;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px;
+        }
+
+        /* NAVIGASI */
+        nav {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 45px;
+        }
+
+        nav a {
+            color: #551a8b;
+            text-decoration: underline;
+        }
+
+        nav span {
+            color: #222;
+        }
+
+        /* GARIS */
+        hr {
+            border: none;
+            border-top: 2px solid #bcbcbc;
+            margin: 0 5% 35px;
+        }
+
+        /* JUDUL UTAMA */
+        .judul {
+            text-align: center;
+            font-size: 56px;
+            font-weight: normal;
+            line-height: 1.65;
+            margin: 0 5% 40px;
+        }
+
+        /* SLOGAN */
+        .slogan {
+            text-align: center;
+            font-size: 27px;
+            font-style: italic;
+            line-height: 1.8;
+            margin: 0 8% 30px;
+        }
+
+        /* PEMBATAS KONTEN */
+        .garis {
+            border: none;
+            border-top: 2px solid #bcbcbc;
+            margin: 25px 5% 30px;
+        }
+
+        /* DESKRIPSI */
+        .deskripsi {
+            font-size: 27px;
+            line-height: 1.8;
+            text-align: left;
+            margin: 0 5% 45px;
+        }
+
+        /* HIGHLIGHT KUNING */
+        mark {
+            background-color: #ffff00;
+            color: #222;
+            padding: 0 3px;
+        }
+
+        /* JUDUL MENU */
+        .judul-menu {
+            font-size: 42px;
+            font-weight: normal;
+            margin: 0 5% 45px;
+        }
+
+        /* DAFTAR MENU */
+        .daftar-menu {
+            font-size: 27px;
+            line-height: 1.8;
+            margin: 0 8% 50px;
+            list-style-type: square;
+        }
+
+        .daftar-menu ul {
+            list-style-type: circle;
+            margin-left: 45px;
+        }
+
+        .daftar-menu li {
+            padding-left: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 22px;
+            padding: 25px 10px 35px;
+        }
+
+        /* RESPONSIVE UNTUK HP */
+        @media (max-width: 600px) {
+
+            header {
+                padding-top: 30px;
+            }
+
+            .logo {
+                width: 180px;
+            }
+
+            nav {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .judul {
+                font-size: 48px;
+                line-height: 1.65;
+                margin-bottom: 35px;
+            }
+
+            .slogan {
+                font-size: 23px;
+                line-height: 1.8;
+                margin-left: 8%;
+                margin-right: 8%;
+            }
+
+            .deskripsi {
+                font-size: 23px;
+                line-height: 2;
+                margin-bottom: 40px;
+            }
+
+            .judul-menu {
+                font-size: 38px;
+                margin-bottom: 40px;
+            }
+
+            .daftar-menu {
+                font-size: 23px;
+                line-height: 1.9;
+            }
+
+            .daftar-menu ul {
+                margin-left: 35px;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h3>MENU PRAKTIKUM</h3>
-<br>Praktikum 1 klik <a href="praktikum1.html">disini</a>
-<br>Praktikum 2 klik <a href="praktikum2.html">disini</a>
-<br>Praktikum 3 klik <a href="praktikum3.html">disini</a>
-<br>Praktikum 4 klik <a href="praktikum4.html">disini</a>
-<br>Praktikum 5 klik <a href="praktikum5.html">disini</a>
-</body>
 
+    <!-- HEADER -->
+    <header>
+
+        <!-- Ganti logo.png dengan nama file logo kamu -->
+        <img
+            src="SY-Series.png"
+            alt="Logo SY Series"
+            class="logo"
+        >
+        
+
+        <!-- MENU NAVIGASI -->
+        <nav>
+            <a href="index.html">Beranda</a>
+            <span> | </span>
+            <a href="jadwal.html">Jadwal Operasional</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- JUDUL -->
+        <h1 class="judul">
+            Selamat Datang Di SY Series<br>
+        
+        </h1>
+
+        <!-- SLOGAN -->
+        <p class="slogan">
+            "Tempat Editing, dan
+            menjemput keindahan."
+        </p>
+
+        <hr class="garis">
+
+        <!-- DESKRIPSI CAFE -->
+        <p class="deskripsi">
+            SY Series didirikan sejak Tanggal 04, Bulan September, tahun 2025 untuk
+            mendukung produktivitas gamingdalam
+            menyelesaikan beberapa masalah. Kami berkomitmen
+            menyajikan Hasil editing berkualitas tinggi
+            namun tetap dengan
+            <mark>harga yang sangat terjangkau</mark>
+            bagi kantong pemain game Bus Simulator Indonesia.
+        </p>
+
+        <!-- MENU FAVORIT -->
+        <h2 class="judul-menu">
+            Beberapa Jasa kami
+        </h2>
+
+        <ul class="daftar-menu">
+
+            <li>
+                Jasa
+
+            <ul class="custom-list">
+    <li>Pembuatan Livery</li>
+    <li>Pembuatan Corak</li>
+    <li>Pembuatan Banner, Stiker, dan Logo team</li>
+    <li>Pembuatan Logo PO (Perusahaan Virtual Otobus)</li>
+  </ul>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Created by Satrya Yanuar Wiguna @2026
+    </footer>
+
+</body>
 </html>
