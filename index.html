@@ -1,197 +1,216 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satrya Yanuar Wiguna</title>
- </head>
- <h2>Repository Utama</h2>
- 
- <title>Biodata Diri</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biodata Diri</title>
 
 <style>
+
+/* RESET DASAR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BACKGROUND BIRU LAUT */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0077b6, #48cae4, #caf0f8);
-    padding: 25px 15px;
-    color: #23445b;
+    background: linear-gradient(
+        135deg,
+        #003f5c,
+        #006994,
+        #0077b6,
+        #0096c7,
+        #48cae4
+    );
+    color: #51483e;
+    min-height: 100vh;
+    padding: 15px;
+    background-attachment: fixed;
 }
 
+/* JUDUL REPOSITORY */
+h2 {
+    font-size: 28px;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+/* KARTU BIODATA */
 .container {
-    max-width: 850px;
+    max-width: 650px;
     margin: auto;
     background: #ffffff;
-    padding: 35px;
-    border-radius: 35px;
-    box-shadow: 0 10px 35px rgba(0,50,90,0.2);
+    border-radius: 25px;
+    border-top: 8px solid #b6a17f;
+    padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* JUDUL BIODATA */
+.judul {
+    text-align: center;
+    color: #88745b;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
 }
 
 /* FOTO PROFIL */
-.profil {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.profil img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+.foto {
+    width: 190px;
+    height: 190px;
     object-fit: cover;
-    border: 6px solid #90e0ef;
-    box-shadow: 0 5px 20px rgba(0,119,182,0.25);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 35px;
+    border: 6px solid #d9c5a5;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
 }
 
-.profil h2 {
-    margin-top: 15px;
-    color: #0077b6;
-    font-size: 26px;
+/* SUBJUDUL */
+.subjudul {
+    background: #f4eee4;
+    border-left: 6px solid #b6a17f;
+    padding: 17px 15px;
+    border-radius: 12px;
+    color: #88745b;
+    font-size: 20px;
+    margin: 30px 0 22px;
 }
 
-.profil p {
-    margin-top: 8px;
-    color: #669bbc;
+/* DATA BIODATA */
+.data {
+    background: #f8f7f3;
+    padding: 19px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
     font-size: 15px;
-}
-
-/* JUDUL */
-.judul {
-    background: linear-gradient(90deg, #caf0f8, #e0f7fa);
-    border-left: 10px solid #0077b6;
-    padding: 25px;
-    border-radius: 18px;
-    font-size: 28px;
-    color: #005f8f;
-    margin-bottom: 30px;
-}
-
-/* KOTAK BIODATA */
-.item {
-    background: #f0faff;
-    padding: 27px;
-    border-radius: 20px;
-    margin-bottom: 18px;
-    font-size: 19px;
     line-height: 1.5;
-    border: 1px solid #d6f1f8;
-    box-shadow: 0 3px 8px rgba(0,119,182,0.06);
 }
 
-.item strong {
-    color: #0077b6;
+.data b {
+    color: #88745b;
 }
 
-/* PENDIDIKAN */
-.pendidikan {
-    margin-top: 60px;
+/* MENU PRAKTIKUM */
+.menu {
+    max-width: 650px;
+    margin: 90px auto 30px;
 }
 
-/* EFEK HOVER */
-.item:hover {
-    background: #dff6ff;
-    transition: 0.3s;
-    transform: translateY(-2px);
+.menu h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-        border-radius: 25px;
+.menu a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
     }
 
-    .profil img {
-        width: 135px;
-        height: 135px;
+    .container {
+        padding: 35px 20px;
     }
 
     .judul {
-        font-size: 23px;
-        padding: 20px;
+        font-size: 25px;
     }
 
-    .item {
-        font-size: 16px;
-        padding: 22px;
+    .foto {
+        width: 180px;
+        height: 180px;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- JUDUL -->
+<h2>Repository Utama</h2>
+
+<!-- KARTU BIODATA -->
 <div class="container">
 
+    <h1 class="judul">BIODATA DIRI</h1>
+
     <!-- FOTO PROFIL -->
-    <div class="profil">
-        <img src="Picsart_26-07-22_18-46-49-647.jpg" alt="Foto Profil">
-        <h2>Satrya Yanuar Wiguna</h2>
-        <p>Pelajar | XI TJKT 2</p>
-    </div>
+    <img src="Profil.jpg" class="foto" alt="Foto Profil">
 
     <!-- DATA PRIBADI -->
-    <h1 class="judul">Data Pribadi</h1>
+    <h3 class="subjudul">Data Pribadi</h3>
 
-    <div class="item">
-        <strong>Nama:</strong> Satrya Yanuar Wiguna 
+    <div class="data">
+        <b>Nama:</b> Satrya Yanuar Wiguna 
     </div>
 
-    <div class="item">
-        <strong>Tempat, Tanggal Lahir:</strong>
+    <div class="data">
+        <b>Tempat, Tanggal Lahir:</b>
         Majalengka, 07 Januari 2010
     </div>
 
-    <div class="item">
-        <strong>Agama:</strong> Islam
+    <div class="data">
+        <b>Agama:</b> Islam
     </div>
 
-    <div class="item">
-        <strong>Kelas:</strong> XI TJKT 2
+    <div class="data">
+        <b>Kelas:</b> XI TJKT 2
     </div>
 
-    <div class="item">
-        <strong>Alamat:</strong>
+    <div class="data">
+        <b>Alamat:</b>
         Desa Sepat, Kec. Sumberjaya, Kab. Majalengka 
     </div>
 
-    <div class="item">
-        <strong>Hobi/Keahlian:</strong> Gamers, Bermain Badminton-Voly-Basket, Bersepeda, Editor,dan Programer.
+    <div class="data">
+        <b>Hobi:</b> Membaca
     </div>
 
     <!-- RIWAYAT PENDIDIKAN -->
-    <div class="pendidikan">
+    <h3 class="subjudul">Riwayat Pendidikan</h3>
 
-        <h1 class="judul">Riwayat Pendidikan</h1>
+    <div class="data">
+        <b>SMK Negeri 1 Leuwimunding:</b>
+        2025–Sekarang
+    </div>
 
-        <div class="item">
-            <strong>SMK Negeri 1 Leuwimunding:</strong>
-            2025–Sekarang
-        </div>
+    <div class="data">
+        <b>SMP Negeri 3 Leuwimunding:</b>
+        2022–2025
+    </div>
 
-        <div class="item">
-            <strong>SMP Negeri 3 Leuwimunding:</strong>
-            2022–2025
-        </div>
-
-        <div class="item">
-            <strong>SD Negeri Sepat:</strong>
-            2016–2022
-        </div>
-
+    <div class="data">
+        <b>SD Negeri Sepat:</b>
+        2016–2022
     </div>
 
 </div>
 
-</body>
-</html>
+<!-- MENU PRAKTIKUM -->
+<div class="menu">
 
- <br>Menu Praktikum <a href="https://satryayanuarwiguna.github.io/Praktikum">
-     Kembali ke website Praktikum
+    <h2>Menu Praktikum</h2>
+
+    <a href="https://satryayanuarwiguna.github.io/Praktikum/">
+        Kembali ke Website Praktikum
+    </a>
+
+</div>
 
 </body>
 </html>
